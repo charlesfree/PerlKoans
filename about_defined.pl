@@ -54,7 +54,7 @@ sub about_undef {
     
     # for many intents and purposes, Perl defines true as '1' and false as '' .
     # functions like 'defined' and 'exists' use this concept of truthiness
-    is (defined __, '', 'undef is not defined'); 
+    is (defined $foo, '', 'undef is not defined'); 
     
     is (defined $foo, __, 'declared variables that have not been assigned are undef');
     

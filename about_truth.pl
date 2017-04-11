@@ -52,10 +52,10 @@ sub about_true {
 sub about_false {
     # about_false() -- false is 0 and undef
     
-    if (__) {
+    if (0) {
         fail('don\'t go here'); # or "don't go here"
     } else {
-        ok (! __, 'undef and 0 are both false');
+        ok (! 0, 'undef and 0 are both false');
     }
     
     return (Perl::Koans::get_return_code()); 
