@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Perl::Koans
 ===========
 
@@ -96,3 +97,7 @@ credits
 =======
 
 rubykoans.com
+=======
+# PerlKoans
+PerlKoans
+>>>>>>> c9efa6e38ed23616ccc893a4f9d3a2b5c7af8ca8
