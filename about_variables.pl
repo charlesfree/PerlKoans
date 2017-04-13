@@ -40,16 +40,16 @@ use Perl::Koans;
 sub about_scalar {
     # about_scalar() - assignment / interpolation 
     # 
-    my $foo = __;        
+    my $foo = 'bar';        
     is ($foo, 'bar', 'assign a string to a scalar');
     
-    my $bar = __;
+    my $bar = $foo;
     is ($foo, $bar, 'assign a scalar to another scalar');
     
-    my $baz = __;
+    my $baz = 'isn\'t';
     is ($baz, "isn't", 'assign a string to a scalar, embedding a single quote');
     
-    my $xyzzy = ___;
+    my $xyzzy = "xyzzy is not $foo";
     is ($xyzzy, 'xyzzy is not bar', 'interpolate a variable into a string'); # no cheating!
     
     fail('expand interpolation coverage to include q// qq// qw//');

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!//bin/perl
 =pod
     Copyright (c) 2012, Salesforce.com, Inc.
     All rights reserved.
@@ -41,9 +41,9 @@ sub about_defined {
     # about_defined() -- defined is any value except undef
     my @foo = (1, -2 , 0);
     
-    is (defined $foo[__], 1, 'a positive integer is defined');
-    is (defined $foo[__], 1, 'a negative integer is defined');
-    is (defined $foo[__], 1, 'even 0 is defined');
+    is (defined $foo[1], 1, 'a positive integer is defined');
+    is (defined $foo[-1], 1, 'a negative integer is defined');
+    is (defined $foo[2], 1, 'even 0 is defined');
     
     return (Perl::Koans::get_return_code()); 
 }
@@ -56,7 +56,7 @@ sub about_undef {
     # functions like 'defined' and 'exists' use this concept of truthiness
     is (defined $foo, '', 'undef is not defined'); 
     
-    is (defined $foo, __, 'declared variables that have not been assigned are undef');
+    is (defined $foo, '', 'declared variables that have not been assigned are undef');
     
     return (Perl::Koans::get_return_code()); 
 }
